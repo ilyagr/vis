@@ -62,6 +62,7 @@ static size_t op_put(Vis *vis, Text *txt, OperatorContext *c) {
 		break;
 	}
 
+// Here's where one could add mark setting for put command
 	size_t len;
 	const char *data = register_slot_get(vis, c->reg, c->reg_slot, &len);
 

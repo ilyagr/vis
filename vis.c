@@ -267,6 +267,7 @@ void window_selection_save(Win *win) {
 	Vis *vis = win->vis;
 	View *view = win->view;
 	Array sel = view_selections_get_all(view);
+	// Selection mark
 	vis_mark_set(win, VIS_MARK_SELECTION, &sel);
 	array_release(&sel);
 	vis_jumplist_save(vis);
